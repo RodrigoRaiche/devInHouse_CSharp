@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S02_Ex2.Console/M2S02_Ex2.Console.csproj": {}
+  },
+  "projects": {
+    "/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S02_Ex2.Console/M2S02_Ex2.Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S02_Ex2.Console/M2S02_Ex2.Console.csproj",
+        "projectName": "M2S02_Ex2.Console",
+        "projectPath": "/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S02_Ex2.Console/M2S02_Ex2.Console.csproj",
+        "packagesPath": "/home/raiche/.nuget/packages/",
+        "outputPath": "/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S02_Ex2.Console/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/raiche/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
