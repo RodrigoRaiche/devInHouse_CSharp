@@ -19,4 +19,14 @@ public class Pessoa{
     public void visualizarDados(){
         Console.WriteLine($"Olá {this.Nome} que tem altura de {this.Altura} metros, pesa {this.Peso} kg e nasceu em {this.DataNascimento}");
     }
+
+    public int calcularIdade(DateTime dataNascimento){
+        int idade = DateTime.Now.Year - dataNascimento.Year;
+
+        if (DateTime.Now.DayOfYear < dataNascimento.DayOfYear){
+            idade = idade - 1;
+        }
+
+        return idade;
+    }
 }
