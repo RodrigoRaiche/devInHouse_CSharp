@@ -1,0 +1,15 @@
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/M2S04_Ex8.csproj.AssemblyReference.cache
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/M2S04_Ex8.GeneratedMSBuildEditorConfig.editorconfig
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/M2S04_Ex8.AssemblyInfoInputs.cache
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/M2S04_Ex8.AssemblyInfo.cs
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/M2S04_Ex8.csproj.CoreCompileInputs.cache
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/bin/Debug/net6.0/M2S04_Ex8
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/bin/Debug/net6.0/M2S04_Ex8.deps.json
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/bin/Debug/net6.0/M2S04_Ex8.runtimeconfig.json
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/bin/Debug/net6.0/M2S04_Ex8.dll
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/bin/Debug/net6.0/M2S04_Ex8.pdb
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/M2S04_Ex8.dll
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/refint/M2S04_Ex8.dll
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/M2S04_Ex8.pdb
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/M2S04_Ex8.genruntimeconfig.cache
+/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S04_Ex8/obj/Debug/net6.0/ref/M2S04_Ex8.dll
