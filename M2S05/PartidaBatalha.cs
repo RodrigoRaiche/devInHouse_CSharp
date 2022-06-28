@@ -1,8 +1,8 @@
 namespace M2S05
 {
-    public class PartidaBatalha
+    public static class PartidaBatalha
     {
-        public int Batalhar(Robo robo1, Robo robo2)
+        public static int Batalhar(Robo robo1, Robo robo2)
         {
             int roboVencedor = 0;
 
