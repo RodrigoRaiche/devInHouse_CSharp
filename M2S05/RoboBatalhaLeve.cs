@@ -2,6 +2,10 @@ namespace M2S05
 {
     public class RoboBatalhaLeve : Robo
     {
+        public RoboBatalhaLeve(string nomeRobo) : base(nomeRobo)
+        {
+        }
+
         public override int CausarDano()
         {
             int valorDano = 0;

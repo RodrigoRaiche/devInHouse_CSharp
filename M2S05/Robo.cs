@@ -4,9 +4,17 @@ namespace M2S05
 {
     public abstract class Robo
     {
-        public string NomeRobo { get; set; }
+        public Robo(string nomeRobo)
+        {
+            this.NomeRobo = nomeRobo;
+            this.Status = EStatus.Desligado;
+            this.PontoVida = 100;
 
-        public int PontoVida { get; set; }
+        }
+
+        public string NomeRobo { get; private set; }
+
+        public int PontoVida { get; private set; }
 
         public EStatus Status { get; private set; }
 
