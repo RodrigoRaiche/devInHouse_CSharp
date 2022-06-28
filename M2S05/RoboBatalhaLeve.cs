@@ -4,7 +4,14 @@ namespace M2S05
     {
         public override int CausarDano()
         {
-            return 10;
+            int valorDano = 0;
+
+            if (this.Status == Enums.EStatus.Ligado)
+            {
+                valorDano = 10;
+            }
+
+            return valorDano;
         }
 
 
