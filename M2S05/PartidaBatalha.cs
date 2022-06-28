@@ -1,22 +1,51 @@
+using System;
+
 namespace M2S05
 {
     public static class PartidaBatalha
     {
-        public static int Batalhar(Robo robo1, Robo robo2)
+        public static int Batalhar(Robo robo1, Robo robo2, int qtdPartida)
         {
             int roboVencedor = 0;
+            int contpartida = 0;
 
-            robo1.ReduzirPontosVida(robo1.CausarDano());
-            robo2.ReduzirPontosVida(robo2.CausarDano());
-
-            if (robo1.Status == Enums.EStatus.Destruído)
+            while (roboVencedor != 0 && contpartida <= qtdPartida)
             {
-                roboVencedor = 1;
+
+                robo1.ReduzirPontosVida(robo1.CausarDano());
+                robo2.ReduzirPontosVida(robo2.CausarDano());
+
+                if (robo1.Status == Enums.EStatus.Destruído)
+                {
+                    roboVencedor = 1;
+                }
+
+                if (robo2.Status == Enums.EStatus.Destruído)
+                {
+                    roboVencedor = 2;
+                }
+
+                Console.WriteLine($"Robô {robo1.NomeRobo} com {robo1.PontoVida} pontos");
+                Console.WriteLine($"Robô {robo2.NomeRobo} com {robo2.PontoVida} pontos");
+
+                contpartida++;
             }
 
-            if (robo2.Status == Enums.EStatus.Destruído)
+            if (roboVencedor == 0)
             {
-                roboVencedor = 2;
+                if (robo1.PontoVida > robo2.PontoVida)
+                {
+                    roboVencedor = 1;
+                }
+                else
+                {
+                    if (robo1.PontoVida < robo2.PontoVida)
+                    {
+                        roboVencedor = 2;
+                    }
+
+                }
+
             }
 
             return roboVencedor;
