@@ -6,19 +6,7 @@ namespace M2S05
     {
         public string NomeRobo { get; set; }
 
-        public int PontoVida
-        {
-            get { return PontoVida; }
-            set
-            {
-                if (value < 0 || value > 100)
-                {
-                    throw new Exception("Valor inválido");
-                }
-                PontoVida = value;
-            }
-        }
-
+        public int PontoVida { get; set; }
 
         public EStatus Status { get; private set; }
 
@@ -32,11 +20,23 @@ namespace M2S05
             this.Status = EStatus.Desligado;
         }
 
+        public void Aguardando()
+        {
+            this.Status = EStatus.Aguardando;
+        }
+
         public abstract int CausarDano();
 
         public void ReduzirPontosVida(int pontoVidas)
         {
-            this.PontoVida -= pontoVidas;
+            if (pontoVidas > this.PontoVida)
+            {
+                this.PontoVida = 0;
+            }
+            else
+            {
+                this.PontoVida -= pontoVidas;
+            }
 
             if (this.PontoVida == 0)
             {
