@@ -1,4 +1,4 @@
-using M2S06_E1.Expections;
+using M2S06_E1.Exceptions;
 
 namespace M2S06_E1.Dominio
 {

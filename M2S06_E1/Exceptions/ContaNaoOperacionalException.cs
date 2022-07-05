@@ -1,4 +1,4 @@
-namespace M2S06_E1.Expections
+namespace M2S06_E1.Exceptions
 {
 
     public class ContaNaoOperacionalException : BaseContaException
