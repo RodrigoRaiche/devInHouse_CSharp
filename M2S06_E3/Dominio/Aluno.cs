@@ -5,13 +5,13 @@ namespace M2S06_E3.Dominio
         public int NumeroChamada { get; private set; }
         public string NomeAluno { get; private set; }
 
-        public List<BoletimPorDisciplina> Boletim { get; set; }
+        public List<BoletimItem> Boletim { get; set; }
 
         public Aluno(int numeroChamada, string nomeAluno)
         {
             this.NumeroChamada = numeroChamada;
             this.NomeAluno = nomeAluno;
-            this.Boletim = new List<BoletimPorDisciplina> { };
+            this.Boletim = new List<BoletimItem> { };
         }
     }
 }

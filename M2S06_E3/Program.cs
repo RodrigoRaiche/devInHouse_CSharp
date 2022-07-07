@@ -82,8 +82,8 @@ internal class Program
 
                                 }
 
-                                BoletimPorDisciplina boletimPorDisciplina = new BoletimPorDisciplina(disciplinas[opcaoDisciplina - 1], notas);
-                                alunos[opcaoAluno - 1].Boletim.Add(boletimPorDisciplina);
+                                BoletimItem BoletimItem = new BoletimItem(disciplinas[opcaoDisciplina - 1], notas);
+                                alunos[opcaoAluno - 1].Boletim.Add(BoletimItem);
                                 break;
                             }
                         case 2:
