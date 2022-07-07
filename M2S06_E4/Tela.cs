@@ -1,5 +1,6 @@
 using M2S06_E4.Dominio;
 using M2S06_E4.Enums;
+using M2S06_E4.Exceptions;
 
 namespace M2S06_E4
 {
@@ -38,9 +39,9 @@ namespace M2S06_E4
 
             var opcaoValidaProduto = int.TryParse(Console.ReadLine(), out var opcaoProduto);
 
-            if (!opcaoValidaProduto || opcaoProduto > listaProdutos.Length + 1)
+            if (!opcaoValidaProduto || opcaoProduto > listaProdutos.Length)
             {
-                throw new Exception();
+                throw new BaseException("Produto inválido");
             }
 
             return listaProdutos[opcaoProduto - 1];
@@ -53,9 +54,9 @@ namespace M2S06_E4
 
             Console.WriteLine("Informe a quantidade: ");
             var quantidadeValida = int.TryParse(Console.ReadLine(), out var quantidade);
-            if (!quantidadeValida || quantidade < 0)
+            if (!quantidadeValida || quantidade <= 0)
             {
-                throw new Exception();
+                throw new BaseException("Quantidade inválida", quantidade.ToString());
             }
 
             return quantidade;

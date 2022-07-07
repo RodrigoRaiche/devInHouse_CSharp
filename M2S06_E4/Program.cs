@@ -31,7 +31,7 @@ while (opcao != OpcaoMenu.Sair)
 
                         int quantidade = Tela.ObterQuantidade();
 
-                        produtoEscolhido.Estoque -= quantidade;
+                        produtoEscolhido.ReduzirEstoque(quantidade);
 
                         Produto produtoReduzido = new Produto(produtoEscolhido.NomeProduto, produtoEscolhido.Valor);
 
@@ -49,7 +49,9 @@ while (opcao != OpcaoMenu.Sair)
                     {
                         Produto produtoEscolhido = Tela.EscolherProduto(listaProdutos);
 
-                        produtoEscolhido.Estoque += carrinhoCompra.ObterQuantidade(produtoEscolhido);
+                        int quantidade = carrinhoCompra.ObterQuantidade(produtoEscolhido);
+
+                        produtoEscolhido.AdicionarEstoque(quantidade);
                         carrinhoCompra.RemoverItem(produtoEscolhido);
                         break;
 

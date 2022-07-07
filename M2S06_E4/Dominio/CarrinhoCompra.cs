@@ -1,5 +1,6 @@
 
 using System.Linq;
+using M2S06_E4.Exceptions;
 
 namespace M2S06_E4.Dominio
 {
@@ -27,6 +28,11 @@ namespace M2S06_E4.Dominio
 
         public void RemoverItem(Produto produto)
         {
+            if (ObterQuantidade(produto) == 0)
+            {
+                throw new BaseException("Produto não existe para ser excluído", produto.NomeProduto);
+            }
+
             this.TotalCompra -= ObterValor(produto);
             this.ListaCompra.RemoveAll(x => x.Produto.NomeProduto == produto.NomeProduto);
         }
@@ -51,6 +57,11 @@ namespace M2S06_E4.Dominio
 
         public void ListarCarrinho()
         {
+
+            if (this.ListaCompra.Count == 0)
+            {
+                throw new BaseException("Não existe produto(s) no carrinho para visualização");
+            }
 
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("LISTA DE COMPRAS");
