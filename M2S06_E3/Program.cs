@@ -50,7 +50,7 @@ internal class Program
                                 int opcaoAluno = 0;
                                 var opcaoValidaAluno = escolherAluno(ref opcaoAluno, alunos);
 
-                                if (!opcaoValidaAluno || opcaoAluno > alunos.Length + 1)
+                                if (!opcaoValidaAluno || opcaoAluno > alunos.Length)
                                 {
                                     throw new AlunoEscolhidoInvalidoException(opcaoAluno.ToString());
                                     continue;
@@ -61,7 +61,7 @@ internal class Program
                                 var opcaoValidaDisciplina = escolherDisciplina(ref opcaoDisciplina, disciplinas);
 
 
-                                if (!opcaoValidaDisciplina || opcaoDisciplina > disciplinas.Length + 1)
+                                if (!opcaoValidaDisciplina || opcaoDisciplina > disciplinas.Length)
                                 {
                                     throw new DisciplinaEscolhidaInvalidaException(opcaoDisciplina.ToString());
                                     continue;
@@ -88,7 +88,7 @@ internal class Program
                             }
                         case 2:
                             {
-                                listarTodasNotas(alunos, disciplinas);
+                                listarTodasNotas(alunos);
                                 break;
 
 
@@ -98,7 +98,7 @@ internal class Program
                                 int opcaoAluno = 0;
                                 var opcaoValidaAluno = escolherAluno(ref opcaoAluno, alunos);
 
-                                if (!opcaoValidaAluno || opcaoAluno > alunos.Length + 1)
+                                if (!opcaoValidaAluno || opcaoAluno > alunos.Length)
                                 {
                                     throw new AlunoEscolhidoInvalidoException(opcaoAluno.ToString());
                                     continue;
@@ -110,7 +110,7 @@ internal class Program
                                     continue;
                                 }
 
-                                listarBoletim(alunos, disciplinas, opcaoAluno);
+                                listarBoletim(alunos, opcaoAluno);
                                 break;
 
 
@@ -169,7 +169,7 @@ internal class Program
 
     }
 
-    private static void listarTodasNotas(Aluno[] alunos, Disciplina[] disciplinas)
+    private static void listarTodasNotas(Aluno[] alunos)
     {
 
         for (int k = 0; k < alunos.Length; k++)
@@ -195,7 +195,7 @@ internal class Program
 
     }
 
-    private static void listarBoletim(Aluno[] alunos, Disciplina[] disciplinas, int opcaoAluno)
+    private static void listarBoletim(Aluno[] alunos, int opcaoAluno)
     {
         Console.WriteLine("-------------------------------");
         Console.WriteLine("---BOLETIM ---");
