@@ -28,9 +28,9 @@ namespace M2S06_E4.Dominio
 
         public void RemoverItem(Produto produto)
         {
-            if (ObterQuantidade(produto) == 0)
+            if (this.ListaCompra.Count() == 0)
             {
-                throw new BaseException("Produto não existe para ser excluído", produto.NomeProduto);
+                throw new ProdutoInexistenteException();
             }
 
             this.TotalCompra -= ObterValor(produto);
@@ -54,27 +54,6 @@ namespace M2S06_E4.Dominio
 
             return queryQtd.Sum();
         }
-
-        public void ListarCarrinho()
-        {
-
-            if (this.ListaCompra.Count == 0)
-            {
-                throw new BaseException("Não existe produto(s) no carrinho para visualização");
-            }
-
-            Console.WriteLine("-----------------------------------");
-            Console.WriteLine("LISTA DE COMPRAS");
-
-            for (int i = 0; i < this.ListaCompra.Count; i++)
-            {
-                Console.WriteLine($"{i + 1} - {this.ListaCompra[i].Quantidade} unidade(s) - {this.ListaCompra[i].Produto.NomeProduto} (R$ {this.ListaCompra[i].Produto.Valor})  = R$ {this.ListaCompra[i].ValorItem}");
-            }
-            Console.WriteLine($"Total compra: {this.TotalCompra} ");
-            Console.WriteLine("-----------------------------------");
-
-        }
-
 
 
     }

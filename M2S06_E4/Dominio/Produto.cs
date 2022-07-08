@@ -26,7 +26,7 @@ namespace M2S06_E4.Dominio
         {
             if (quantidade > this.Estoque)
             {
-                throw new BaseException("Quantidade maior que o estoque", quantidade.ToString());
+                throw new QuantidadeMaiorEstoqueException(quantidade.ToString(), this.Estoque.ToString());
             }
 
             this.Estoque -= quantidade;

@@ -41,7 +41,7 @@ while (opcao != OpcaoMenu.Sair)
                     }
                 case OpcaoMenu.ListarCarrinho:
                     {
-                        carrinhoCompra.ListarCarrinho();
+                        RelatorioCarrinhoCompras.ListarCarrinho(carrinhoCompra);
                         break;
 
                     }
