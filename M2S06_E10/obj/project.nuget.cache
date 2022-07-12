@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fUiJDkSNRoliYpnnGhmg4t3E1o4WolP6mwe22lhXQOrl3b1HmcRVkOpvw3vtECIVrYaTjOBjc1AsN71VKtuRmw==",
+  "dgSpecHash": "qB+msb/7hH9VrynUbC+YNf+uHuOy1RoJfLB2SCLwDFz6sF2N+J/zrq+fCxPNoagZG4kDhxYsCbbuyHFkd1u/CA==",
   "success": true,
-  "projectFilePath": "/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S06_E10/DevInHouse.Audaces.Exercises.Ten.Tests.csproj",
+  "projectFilePath": "/home/raiche/DevInHouse2/DevInHouse_CSharp/Exercicios_CSharp/M2S06_E10/M2S06_E10.csproj",
   "expectedPackageFiles": [
     "/home/raiche/.nuget/packages/microsoft.codecoverage/17.2.0/microsoft.codecoverage.17.2.0.nupkg.sha512",
     "/home/raiche/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",

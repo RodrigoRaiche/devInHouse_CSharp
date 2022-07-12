@@ -2,7 +2,7 @@ using M2S06_E5.Dominio;
 using M2S06_E5.Exceptions;
 using Xunit;
 
-namespace DevInHouse.Audaces.Exercises.Ten.Tests;
+namespace M2S06_E10;
 
 public class AgendaTests
 {
