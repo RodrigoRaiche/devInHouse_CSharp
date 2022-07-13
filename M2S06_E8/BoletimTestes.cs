@@ -6,10 +6,6 @@ namespace M2S06_E8;
 
 public class BoletimTestes
 {
-    private const string NumeroContaPadrao = "1234";
-    private const double SaldoBase = 5000;
-    private const double LimiteSaque = 500;
-
     private Aluno CriarAluno()
     {
         return new Aluno(101, "Rodrigo Raiche");
